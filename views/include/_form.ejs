@@ -1,0 +1,39 @@
+  <!-- add user form -->
+  <form action="/complaints" method="POST" id="add_complaint">
+    <div class="new_complaint">
+        <div class="form-group">
+            <label for="name" class="text-light">Resident Id</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="residentId" value="">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-light">Assigned To</label>
+            <input type="text" name="assignedTo" value="">
+        </div>
+        <div class="form-group">
+            <label for="status" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-1" name="status" value="Open" >
+                <label for="radio-1" class="radio-label">Open</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="status" value="In Progress" >
+                <label for="radio-2" class="radio-label">In Progress</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="status" value="Closed" >
+                <label for="radio-3" class="radio-label">Closed</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+                <label for="name" class="text-light">Description</label>
+                <textarea type="text" name="description" value="" rows="4" cols="50"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn1 text-dark update">Submit</button>
+        </div>
+
+    </div>
+</form>

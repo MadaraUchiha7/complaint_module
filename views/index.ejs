@@ -1,0 +1,14 @@
+<%-include('include/_header')%>
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <a href="/add-complaint" class="border-shadow addcomplaint">
+                <span class="text-gradient">Add Complaint <i class="fa-solid fa-comment"></i></span>
+            </a>
+        </div>
+        <form action="/" method = "POST">
+           <%- include('include/_show') %>
+        </form>
+    </div>
+</main>
+<%-include('include/_footer')%>

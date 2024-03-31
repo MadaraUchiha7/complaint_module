@@ -1,0 +1,19 @@
+<% for(let i = 0;i<complaints.length;i++){ %>
+<div class="complaint-container">
+    <div class="container-gray">
+        <p>Resident Id: <%= complaints[i].residentId %></p>
+        <p>Assigned To: <%= complaints[i].assignedTo %></p> 
+        <p>Status: <%= complaints[i].status %></p>
+        <p>Description: <%= complaints[i].description %></p>
+        <div class="icons">
+           <a href="/update-complaint?id=<%= complaints[i]._id %>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+           </a>
+        <a class="btn border-shadow delete" data-id=<%= complaints[i]._id %>>
+            <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
+        </a>
+        </div>
+        
+    </div>
+</div>
+<% } %>
